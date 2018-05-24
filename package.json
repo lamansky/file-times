@@ -1,0 +1,37 @@
+{
+  "name": "file-times",
+  "version": "1.0.0",
+  "description": "Gets or sets the created/modified/accessed timestamps of a file.",
+  "author": "John Lamansky",
+  "license": "MIT",
+  "homepage": "https://github.com/lamansky/file-times",
+  "repository": "lamansky/file-times",
+  "main": "index.js",
+  "files": [
+    "get.js",
+    "set.js"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "@ronomon/utimes": "^2.2.0",
+    "map-obj": "^2.0.0",
+    "moment": "^2.22.1",
+    "pfn": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-lamansky": "^1.0.0",
+    "mocha": "^5.2.0",
+    "tmp": "0.0.33"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "eslintConfig": {
+    "extends": "lamansky",
+    "env": {
+      "mocha": true
+    }
+  }
+}
