@@ -18,13 +18,13 @@ The module exports an object with two methods: `get()` and `set()`.
 
 This function can also be required directly via `file-times/get`.
 
-### Parameters
+#### Parameters
 
 1. `path` (string): The file path.
 2. Optional: Object argument:
      * `wrapper` (function): A callback through which the file times should be passed. Defaults to the [moment](https://github.com/moment/moment) library constructor.
 
-### Return Value
+#### Return Value
 
 Returns a Promise that will resolve with an object containing four keys: `created`, `modified`, `changed`, and `accessed`. Each key corresponds to a timestamp that has been wrapped with `wrapper`.
 
@@ -42,7 +42,7 @@ getFileTimes('/path').then(({created, modified, changed, accessed}) => {
 
 This function can also be required directly via `file-times/set`.
 
-### Parameters
+#### Parameters
 
 1. `path` (string): The file path.
 2. Object argument:
@@ -52,7 +52,7 @@ This function can also be required directly via `file-times/set`.
 
 If a timestamp is omitted, it will not be changed. The `set()` function does not support `changed`. Setting `created` will have no effect on Linux.
 
-### Return Value
+#### Return Value
 
 Returns a Promise.
 
